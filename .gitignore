@@ -1,0 +1,32 @@
+# === Gradle ===
+.gradle/
+build/
+*/build/
+
+# === Android Studio / IntelliJ ===
+.idea/
+*.iml
+local.properties
+captures/
+.cxx/
+
+# === 编译产物 ===
+*.apk
+*.aab
+*.ap_
+*.dex
+*.class
+
+# === 签名 / 密钥（敏感，绝不能提交）===
+*.jks
+*.keystore
+keystore.properties
+
+# === Trace 调试产物 ===
+trace.html
+trace.perfetto-trace
+*.perfetto-trace
+
+# === 系统 ===
+.DS_Store
+Thumbs.db
