@@ -1,1 +1,22 @@
-include 'Application'
+// 工程设置：声明模块 + 插件/依赖仓库
+// 现代化版本（对齐 AndroidDemo，适配 Gradle 9.3.0 + AGP 8.7.3）
+
+pluginManagement {
+    repositories {
+        google()        // Google Maven（Android 依赖在这）
+        mavenCentral()  // Maven 中央仓库
+    }
+}
+
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+    }
+}
+
+rootProject.name = "Camera2BasicJava"
+
+// 声明包含 Application 模块
+include ':Application'

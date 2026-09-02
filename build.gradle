@@ -1,10 +1,6 @@
+// 工程级构建文件：声明所有模块共用的 Gradle 插件版本
+// 版本号只在这声明，app 模块里只 apply（不写版本）
 
-
-
-
-
-
-
-
-
-
+plugins {
+    id 'com.android.application' version '8.7.3' apply false
+}
